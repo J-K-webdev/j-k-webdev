@@ -1,0 +1,47 @@
+.desktop {
+  position: relative;
+  width: 100%;
+  max-width: calc(1280px + 2rem);
+  height: 768px;
+  border: 5px solid #cccccc;
+  background: #0B001D;
+  border-radius: 30px;
+  box-shadow: 0 25px 35px $shadow;
+  padding: 40px 30px;
+  margin: 0 2rem;
+  overflow: hidden;
+}
+
+.desktop-notch {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 9px;
+  height: 9px;
+  background: #444;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.desktop-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #444;
+  width: 100%;
+  height: 30px;
+}
+
+.desktop-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background: url('../images/desk.webp') center/cover no-repeat;
+  background-size: 100% 100%;
+  padding: 40px;
+}

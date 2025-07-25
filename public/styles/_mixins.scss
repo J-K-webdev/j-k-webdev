@@ -1,0 +1,10 @@
+@mixin flex-center($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin smooth-transition($prop, $duration: 0.3s, $easing: ease) {
+  transition: #{$prop} #{$duration} #{$easing};
+}
